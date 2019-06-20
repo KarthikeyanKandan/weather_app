@@ -7,7 +7,7 @@ window.addEventListener('load', ()=>{
           long=position.coords.longitude;
             lat=position.coords.latitude;
             
-            const api=`http://api.openweathermap.org/data/2.5/forecast?id=1264527&APPID=dc2e13638fabb06dc102bcc7c90f2655`
+            const api=`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&APPID=dc2e13638fabb06dc102bcc7c90f2655`;
         
         });
     }
