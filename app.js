@@ -4,12 +4,14 @@ window.addEventListener('load', ()=>{
     
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position =>{
-          long=position.coords.longitude;
-            lat=position.coords.latitude;
+          long = position.coords.longitude;
+            lat = position.coords.latitude;
             
-            const api=`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&APPID=dc2e13638fabb06dc102bcc7c90f2655`;
-        
+            const api=`https://api.darksky.net/forecast/76462b849293bf6babaa711474ef32ba/${lat},${long}`;
         });
+        
+        fetch(api)
+            .then(data)
     }
     
 });
