@@ -12,5 +12,26 @@ body {
     background: linear-gradient(rgb(47,163,150),rgb(48,143,63));
     font-family: sans-serif;
     color: azure;
-    
+}
+.location, .temperature{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.temperature{
+    flex-direction: column;
+}
+.degree-section{
+    display: flex;
+    align-items: center; 
+    cursor: pointer;
+}
+.degree-section span{
+    margin: 10px;
+    font-size: 25px;
+}
+.degree-section h2{
+    font-size: 40px;
 }
